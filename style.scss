@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Pacifico&display=swap');
+:root {
+    --orange: #f6755e;
+    --blue: #25a2c3;
+    --white: #fff;
+    --gray: #767d85;
+    --bodyFont: 'Montserrat', sans-serif;
+    --transition: .3s ease;
+    --font: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: var(--font);
+    font-family: var(--bodyFont);
+    color: var(--gray);
+    line-height: 1.6;
+    header{
+        text-align: center;
+        background-image:linear-gradient(rgba(255,255,255, 0.8),rgba(255,255,255,0.8)), url(img/header.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 150px 300px 300px 300px;
+        .logo{
+            font-family: 'Pacifico', cursive;
+            font-size: 4rem;
+            color: var(--blue);
+        }
+        p{
+            font-weight: 300;
+            font-size: 1.3rem;
+        }
+        button{
+            background: var(--orange);
+            padding: 15px 40px;
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            :hover{
+                cursor: pointer;
+                background: var(--blue);
+                transition: var(--transition) ;
+            }
+        }
+        
+    }
+    .container {
+        width: 70%;
+        margin: auto;
+        &::after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+    }
+    .one {
+        padding: 80px 0;
+        article{
+            width: 33%;
+            float: left;
+            padding: 30px;
+            &:nth-child(1){
+                text-align: right;
+                padding-top: 60px;
+            }
+            &:nth-child(3){
+                padding-top: 60px;
+            }
+            h2{
+                color: var(--blue);
+                padding-bottom: 10px;
+            }
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }   
+    }
+    .two{
+        background: var(--orange);
+        padding: 80px;
+        text-align: center;
+        color: var(--white);
+        h2{
+            font-size: 2rem;
+            letter-spacing: 2px;
+            padding-bottom: 20px;
+        }
+        blockquote{
+            opacity: .6;
+            font-style: italic;
+            padding-bottom: 20px;
+        }
+        h5{
+            font-size: 1.1rem;
+        }
+        p{
+            opacity: 0.6;
+        }
+    }
+    .three{
+        padding: 80px 0;
+        article{
+            width: 33%;
+            float: left;
+            .wrapper{
+                border: 1px solid var(--gray);
+                margin: 20px;
+                border-radius: 5px;
+                .img1{
+                    height: 250px;
+                    background-image: url(img/img1.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .img2{
+                    height: 250px;
+                    background-image: url(img/img2.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .img3{
+                    height: 250px;
+                    background-image: url(img/img3.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .text{
+                    padding: 20px;
+                    text-align: justify;
+                    h3{
+                        color: var(--blue);
+                    }
+                }
+            }
+        }
+        
+    }
+    footer{
+        background: var(--blue);
+        padding: 80px 0;
+        text-align: center;
+        color: var(--white);
+        section:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        h2{
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        .three-columns{
+            article{
+                width:33%;
+                float:left;
+                padding: 30px 0;
+                i{
+                    color: var(--orange);
+                }
+                
+                // &::after{
+                //     display: block;
+                //     content: "";
+                //     clear: both;
+                // }
+            
+            }
+        }
+        hr{
+            width: 50%;
+            margin: auto;
+        }
+        p{
+            padding: 30px 0;
+        }
+    }
+} 
